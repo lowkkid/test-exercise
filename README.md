@@ -14,7 +14,10 @@ This project consists of two Spring Boot applications:
 ---
 
 ## Running the Applications
-### 1. Clone repository with `git clone https://github.com/lowkkid/test-exercise`
+### 1. Clone repository with 
+```sh
+git clone https://github.com/lowkkid/test-exercise
+````
 
 ### **2.1 Run using Startup Scripts**
 
