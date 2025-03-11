@@ -1,0 +1,96 @@
+databaseChangeLog:
+  - changeSet:
+      id: insertBooksData
+      author: Uladzislau Shykunou
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO book (title, author, publication_year, available_copies) VALUES
+              ('The Great Gatsby', 'F. Scott Fitzgerald', 1925, 10),
+              ('1984', 'George Orwell', 1949, 15),
+              ('To Kill a Mockingbird', 'Harper Lee', 1960, 20),
+              ('Pride and Prejudice', 'Jane Austen', 1813, 12),
+              ('The Catcher in the Rye', 'J.D. Salinger', 1951, 8),
+              ('The Hobbit', 'J.R.R. Tolkien', 1937, 25),
+              ('Fahrenheit 451', 'Ray Bradbury', 1953, 18),
+              ('Moby Dick', 'Herman Melville', 1851, 5),
+              ('War and Peace', 'Leo Tolstoy', 1869, 7),
+              ('The Odyssey', 'Homer', -800, 3),
+              ('Crime and Punishment', 'Fyodor Dostoevsky', 1866, 9),
+              ('The Brothers Karamazov', 'Fyodor Dostoevsky', 1880, 6),
+              ('Anna Karenina', 'Leo Tolstoy', 1877, 11),
+              ('The Iliad', 'Homer', -750, 4),
+              ('Brave New World', 'Aldous Huxley', 1932, 14),
+              ('The Divine Comedy', 'Dante Alighieri', 1320, 2),
+              ('The Aeneid', 'Virgil', -29, 1),
+              ('Les Misérables', 'Victor Hugo', 1862, 13),
+              ('Don Quixote', 'Miguel de Cervantes', 1605, 16),
+              ('The Republic', 'Plato', -380, 17);
+
+  - changeSet:
+      id: insertReviewsData
+      author: Uladzislau Shykunou
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO review (rating, comment, book_id) VALUES
+              (5, 'A masterpiece of literature!', 1),
+              (4, 'Very thought-provoking.', 1),
+              (3, 'Good, but not my favorite.', 1),
+              (5, 'Absolutely brilliant!', 2),
+              (2, 'Overrated in my opinion.', 2),
+              (4, 'A classic for a reason.', 2),
+              (5, 'Heartwarming and powerful.', 3),
+              (5, 'A must-read for everyone.', 3),
+              (4, 'Great story, but slow at times.', 3),
+              (5, 'Timeless romance.', 4),
+              (3, 'A bit too long.', 4),
+              (4, 'Enjoyable read.', 4),
+              (5, 'Captivating from start to finish.', 5),
+              (2, 'Did not live up to the hype.', 5),
+              (4, 'Interesting perspective.', 5),
+              (5, 'An epic adventure!', 6),
+              (4, 'Loved the world-building.', 6),
+              (3, 'A bit slow in the middle.', 6),
+              (5, 'A chilling dystopia.', 7),
+              (4, 'Very relevant today.', 7),
+              (3, 'Good, but not Bradbury''s best.', 7),
+              (5, 'A whale of a tale!', 8),
+              (2, 'Too dense for me.', 8),
+              (4, 'A classic, but hard to read.', 8),
+              (5, 'Epic in every sense.', 9),
+              (3, 'Too many characters.', 9),
+              (4, 'Worth the effort.', 9),
+              (5, 'A timeless journey.', 10),
+              (4, 'Hard to follow at times.', 10),
+              (3, 'Not my cup of tea.', 10),
+              (5, 'Deep and philosophical.', 11),
+              (4, 'A challenging read.', 11),
+              (3, 'Too dark for my taste.', 11),
+              (5, 'A literary masterpiece.', 12),
+              (4, 'Complex and rewarding.', 12),
+              (3, 'Too long and dense.', 12),
+              (5, 'A tragic love story.', 13),
+              (4, 'Beautifully written.', 13),
+              (3, 'Slow start, but worth it.', 13),
+              (5, 'An epic tale of war.', 14),
+              (4, 'Classic literature.', 14),
+              (3, 'Hard to get into.', 14),
+              (5, 'A visionary novel.', 15),
+              (4, 'Still relevant today.', 15),
+              (3, 'Too pessimistic.', 15),
+              (5, 'A journey through the afterlife.', 16),
+              (4, 'Complex but rewarding.', 16),
+              (3, 'Not for everyone.', 16),
+              (5, 'An epic poem.', 17),
+              (4, 'A classic of Western literature.', 17),
+              (3, 'Hard to follow.', 17),
+              (5, 'A story of redemption.', 18),
+              (4, 'Long but worth it.', 18),
+              (3, 'Too melodramatic.', 18),
+              (5, 'A hilarious adventure.', 19),
+              (4, 'A classic of Spanish literature.', 19),
+              (3, 'Too long-winded.', 19),
+              (5, 'Philosophical and thought-provoking.', 20),
+              (4, 'A foundational text.', 20),
+              (3, 'Too abstract.', 20);

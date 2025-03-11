@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/2025-03-11-create-books-table-for-postgres.yml
+  - include:
+      file: db/changelog/2025-03-11-create-reviews-table-for-postgres.yml
+  - include:
+      file: db/changelog/2025-03-10-insert-data.yml

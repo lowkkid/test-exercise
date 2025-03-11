@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/2025-03-10-create-books-table.yml
+  - include:
+      file: db/changelog/2025-03-10-create-reviews-table.yml
+  - include:
+      file: db/changelog/2025-03-10-add-search-index-on-books.yml
+  - include:
+      file: db/changelog/2025-03-10-insert-data.yml

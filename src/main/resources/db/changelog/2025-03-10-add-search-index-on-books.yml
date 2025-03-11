@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: addSearchIndexOnBooks
+      author: Uladzislau Shykunou
+      changes:
+        - sql:
+            sql: |
+              CREATE ALIAS IF NOT EXISTS FTL_INIT FOR 'org.h2.fulltext.FullText.init';
+              CALL FTL_INIT();
+
+#CALL FTL_CREATE_INDEX('PUBLIC', 'BOOK', 'TITLE, AUTHOR');
+# in Oracle I would maybe use CTXSYS.CONTEXT index for search optimization

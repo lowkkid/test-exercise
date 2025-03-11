@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: createBookTable
+      author: Uladzislau Shykunou
+      changes:
+        - sql:
+            sql: |
+              CREATE TABLE book (
+                id IDENTITY PRIMARY KEY,
+                title VARCHAR(255) NOT NULL,
+                author VARCHAR(255) NOT NULL,
+                publication_year INT NOT NULL,
+                available_copies INT NOT NULL
+              );

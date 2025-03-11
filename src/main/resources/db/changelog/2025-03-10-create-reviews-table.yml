@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: createReviewsTable
+      author: Uladzislau Shykunou
+      changes:
+        - sql:
+            sql: |
+              CREATE TABLE review (
+                id IDENTITY PRIMARY KEY,
+                rating INT NOT NULL,
+                comment VARCHAR(1000),
+                book_id BIGINT NOT NULL,
+                CONSTRAINT fk_review_book FOREIGN KEY (book_id) REFERENCES book(id) ON DELETE CASCADE
+              );
